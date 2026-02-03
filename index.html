@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FASEG Study - Plateforme de Révision Académique</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Lexend -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#195de6",
+                        "academic-green": "#10b981",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0e121b] dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#e7ebf3] dark:border-gray-800 px-4 md:px-10 lg:px-40 py-3">
+<div class="flex items-center justify-between max-w-[1200px] mx-auto">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+<h2 class="text-[#0e121b] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">FASEG Study</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4 md:gap-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#0e121b] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Accueil</a>
+<a class="text-[#0e121b] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Cours</a>
+<a class="text-[#0e121b] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Bibliothèque</a>
+<a class="text-[#0e121b] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">À propos</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-[0.015em] hover:bg-primary/90 transition-all">
+<span class="truncate">Commencer</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="Photo de profil utilisateur ou avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxArv4eb2Yq2Me0eJDZbj2MBKMWSVs6SSo4pZanALYZTcQ9_ekOWLKtBIDEQ9IIZVQk9wl3qIC-O_moT4xrRbpsVXxNoEDm-iRTEsNv-ZyfUGVzVqeJvkATfwxduPV6lFXFs_KIDgXvOy8dXRteNeIcGLHRo3QGzCX--sM8URfqqRyZ24qm5XQZkQiMgQErUsjiMDriJSCesa5-p0RwRgkl9kgBSx62AuRyx1mjGMJ-1PF7F6wXC6BnyjXVsM7fnObzrjoO_Y1FXI");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<div class="px-4 md:px-10 lg:px-40 flex justify-center py-10 md:py-20">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<div class="@container">
+<div class="flex flex-col gap-8 md:gap-12 lg:flex-row items-center">
+<div class="flex flex-col gap-6 lg:w-1/2">
+<div class="flex flex-col gap-4 text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+<span class="material-symbols-outlined text-sm">verified</span>
+                                            Plateforme officielle FASEG
+                                        </div>
+<h1 class="text-[#0e121b] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl">
+                                            Réussissez vos examens avec <span class="text-primary">FASEG Study</span>
+</h1>
+<p class="text-[#4e6797] dark:text-gray-400 text-base md:text-lg font-normal leading-relaxed max-w-[540px]">
+                                            La plateforme de révision ultime pour les étudiants de la FASEG. Accédez à des cours complets, des quiz interactifs et suivez votre progression en temps réel.
+                                        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-xl h-14 px-6 bg-primary text-white text-base font-bold shadow-lg shadow-primary/25 hover:translate-y-[-2px] transition-all">
+<span class="truncate">Commencer à réviser</span>
+</button>
+<button class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-xl h-14 px-6 bg-white dark:bg-gray-800 text-[#0e121b] dark:text-white border border-[#d0d7e7] dark:border-gray-700 text-base font-bold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
+<span class="truncate">Explorer les cours</span>
+</button>
+</div>
+</div>
+<div class="w-full lg:w-1/2 relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-academic-green/20 rounded-3xl blur-2xl group-hover:opacity-75 transition-opacity duration-500"></div>
+<div class="relative w-full aspect-video md:aspect-square bg-center bg-no-repeat bg-cover rounded-2xl shadow-2xl border-4 border-white dark:border-gray-800" data-alt="Étudiant travaillant sur une tablette dans une bibliothèque moderne" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6rP0OfgMm7ZA5N2BVKnZHdPMBDbgF2j6ApuQFscQULe0hRKnxZYwtGCMGkrhdecDPQ8Wh4UZ_tZzIkNzL3mZsczE_qGyj26msYbafnTO4ZdVhV04Jll-bp7cQCrH6vnyevoawegpPuytvGPAwbX7XjYzFUJDfS1LKQtPmPhKewNEFJcawQgEatS5JpDqZ58RKsX6NkXpWNf9z21xfhFbKnNZfDtJF720TdzRHps0gxdvW1squsXG1d9Wwbv4RiKeM-h3KZbVLIIc");'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Stats Section -->
+<div class="px-4 md:px-10 lg:px-40 py-10 bg-white dark:bg-background-dark/50">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-wrap justify-center gap-6">
+<div class="flex min-w-[200px] flex-1 flex-col items-center gap-2 rounded-2xl p-8 bg-background-light dark:bg-gray-800/50 border border-[#d0d7e7] dark:border-gray-700 hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">groups</span>
+<p class="text-[#4e6797] dark:text-gray-400 text-sm font-medium uppercase tracking-widest">Étudiants actifs</p>
+<p class="text-[#0e121b] dark:text-white tracking-tight text-4xl font-black">5,000+</p>
+</div>
+<div class="flex min-w-[200px] flex-1 flex-col items-center gap-2 rounded-2xl p-8 bg-background-light dark:bg-gray-800/50 border border-[#d0d7e7] dark:border-gray-700 hover:border-academic-green transition-colors">
+<span class="material-symbols-outlined text-academic-green text-3xl mb-2">auto_stories</span>
+<p class="text-[#4e6797] dark:text-gray-400 text-sm font-medium uppercase tracking-widest">Cours disponibles</p>
+<p class="text-[#0e121b] dark:text-white tracking-tight text-4xl font-black">120+</p>
+</div>
+<div class="flex min-w-[200px] flex-1 flex-col items-center gap-2 rounded-2xl p-8 bg-background-light dark:bg-gray-800/50 border border-[#d0d7e7] dark:border-gray-700 hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">workspace_premium</span>
+<p class="text-[#4e6797] dark:text-gray-400 text-sm font-medium uppercase tracking-widest">Taux de réussite</p>
+<p class="text-[#0e121b] dark:text-white tracking-tight text-4xl font-black">95%</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature Section Header -->
+<div class="px-4 md:px-10 lg:px-40 pt-20">
+<div class="max-w-[1200px] mx-auto text-center flex flex-col items-center gap-4">
+<h2 class="text-primary text-sm font-bold uppercase tracking-[0.2em]">Excellence Académique</h2>
+<h3 class="text-[#0e121b] dark:text-white text-3xl md:text-5xl font-black leading-tight max-w-[800px]">
+                            Tout ce dont vous avez besoin pour réussir votre semestre
+                        </h3>
+<div class="h-1 w-20 bg-primary rounded-full mt-4"></div>
+</div>
+</div>
+<!-- Feature Grid Section -->
+<div class="px-4 md:px-10 lg:px-40 py-16">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-[#d0d7e7] dark:border-gray-800 bg-white dark:bg-gray-900 p-8 shadow-sm hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+<div class="flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">menu_book</span>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-[#0e121b] dark:text-white text-xl font-bold">Cours Complets</h2>
+<p class="text-[#4e6797] dark:text-gray-400 text-base leading-relaxed">
+                                        Contenus structurés par semestre et par matière pour une révision efficace et ciblée selon le programme officiel.
+                                    </p>
+</div>
+<a class="mt-auto flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all" href="#">
+                                    En savoir plus <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Feature 2 -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-[#d0d7e7] dark:border-gray-800 bg-white dark:bg-gray-900 p-8 shadow-sm hover:shadow-xl hover:border-academic-green/50 transition-all duration-300">
+<div class="flex size-14 items-center justify-center rounded-xl bg-academic-green/10 text-academic-green group-hover:bg-academic-green group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">quiz</span>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-[#0e121b] dark:text-white text-xl font-bold">Quiz Interactifs</h2>
+<p class="text-[#4e6797] dark:text-gray-400 text-base leading-relaxed">
+                                        Testez vos connaissances avec des examens blancs, des QCM chronométrés et obtenez des corrections détaillées instantanément.
+                                    </p>
+</div>
+<a class="mt-auto flex items-center gap-2 text-academic-green font-bold text-sm hover:gap-3 transition-all" href="#">
+                                    Tester maintenant <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Feature 3 -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-[#d0d7e7] dark:border-gray-800 bg-white dark:bg-gray-900 p-8 shadow-sm hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+<div class="flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">insights</span>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-[#0e121b] dark:text-white text-xl font-bold">Suivi de Progression</h2>
+<p class="text-[#4e6797] dark:text-gray-400 text-base leading-relaxed">
+                                        Visualisez vos points forts et vos axes d'amélioration grâce à des graphiques intelligents et des recommandations personnalisées.
+                                    </p>
+</div>
+<a class="mt-auto flex items-center gap-2 text-primary font-bold text-sm hover:gap-3 transition-all" href="#">
+                                    Voir mon tableau <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<div class="px-4 md:px-10 lg:px-40 py-20">
+<div class="max-w-[1200px] mx-auto bg-primary rounded-[2.5rem] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 overflow-hidden relative">
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-academic-green/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col gap-6 text-white md:w-2/3 text-center md:text-left">
+<h2 class="text-4xl md:text-5xl font-black leading-tight">Prêt à transformer vos résultats ?</h2>
+<p class="text-white/80 text-lg">Rejoignez des milliers d'étudiants de la FASEG et accédez à la meilleure bibliothèque de ressources académiques.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
+<button class="h-14 px-10 bg-white text-primary rounded-xl font-black text-lg hover:scale-105 transition-transform">Inscrivez-vous gratuitement</button>
+<button class="h-14 px-8 bg-white/20 text-white backdrop-blur-sm rounded-xl font-bold hover:bg-white/30 transition-colors border border-white/30">Parler à un conseiller</button>
+</div>
+</div>
+<div class="relative z-10 hidden lg:block">
+<span class="material-symbols-outlined text-[180px] text-white/20">rocket_launch</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#e7ebf3] dark:border-gray-800 px-4 md:px-10 lg:px-40 py-12">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xl font-black text-[#0e121b] dark:text-white">FASEG Study</span>
+</div>
+<p class="text-sm text-[#4e6797] dark:text-gray-400">La plateforme n°1 de révision pour les facultés des sciences économiques et de gestion.</p>
+<div class="flex gap-4 mt-2">
+<a class="text-[#4e6797] hover:text-primary" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-[#4e6797] hover:text-primary" href="#"><span class="material-symbols-outlined">language</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0e121b] dark:text-white">Plateforme</h4>
+<ul class="flex flex-col gap-2 text-sm text-[#4e6797] dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">Tous les Cours</a></li>
+<li><a class="hover:text-primary" href="#">Examens Blancs</a></li>
+<li><a class="hover:text-primary" href="#">Bibliothèque PDF</a></li>
+<li><a class="hover:text-primary" href="#">Planning de révision</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0e121b] dark:text-white">Support</h4>
+<ul class="flex flex-col gap-2 text-sm text-[#4e6797] dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">Centre d'aide</a></li>
+<li><a class="hover:text-primary" href="#">Contact</a></li>
+<li><a class="hover:text-primary" href="#">FAQ</a></li>
+<li><a class="hover:text-primary" href="#">Communauté</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0e121b] dark:text-white">Newsletter</h4>
+<p class="text-sm text-[#4e6797] dark:text-gray-400">Recevez des conseils de révision chaque semaine.</p>
+<div class="flex gap-2">
+<input class="bg-background-light dark:bg-gray-800 border-none rounded-lg text-sm w-full focus:ring-2 focus:ring-primary" placeholder="votre@email.com" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg"><span class="material-symbols-outlined">send</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-[#e7ebf3] dark:border-gray-800 text-center text-xs text-[#4e6797] dark:text-gray-500">
+<p>© 2024 FASEG Study. Tous droits réservés. Dédié aux étudiants de la FASEG.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
